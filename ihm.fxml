@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controleur">
+    <children>
+        <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="600.0">
+            <bottom>
+                <Pane prefHeight="85.0" prefWidth="600.0">
+                    <children>
+                        <Button fx:id="buttonFermer" layoutX="266.0" layoutY="32.0" mnemonicParsing="false" onAction="#fermer" text="Quitter" />
+                    </children>
+                </Pane>
+            </bottom>
+            <center>
+                <ScrollPane id="sasd" fx:id="affichage" prefHeight="250.0" prefWidth="250.0">
+                    <content>
+                        <VBox fx:id="titres" alignment="CENTER" prefWidth="250.0"/>
+
+
+                    </content>
+                </ScrollPane>
+            </center>
+            <left>
+                <Pane prefHeight="302.0" prefWidth="68.0" />
+            </left>
+            <right>
+                <Pane prefHeight="302.0" prefWidth="68.0" />
+            </right>
+            <top>
+                <Pane prefHeight="146.0" prefWidth="600.0">
+                    <children>
+                        <Label layoutX="221.0" layoutY="31.0" text="Base de donnes CINEMA" />
+                        <Label layoutX="14.0" layoutY="85.0" text="Nom comédien" />
+                        <TextField fx:id="zone" layoutX="138.0" layoutY="83.0" prefWidth="230.0" />
+                        <Button id="chercher" defaultButton="true" layoutX="395.0" layoutY="83.0" mnemonicParsing="false" onAction="#chercher" text="Rechercher" />
+                        <Button fx:id="buttonClear" layoutX="509.0" layoutY="83.0" mnemonicParsing="false" onAction="#clear" text="Effacer" />
+                        <Label layoutX="69.0" layoutY="131.0" text="Titre Films" />
+                    </children>
+                </Pane>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>
